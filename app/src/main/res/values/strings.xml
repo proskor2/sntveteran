@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">СНТ Ветеран-3</string>
+    <string name="nextbutton">Далее</string>
+    <string name="previousbutton">Назад</string>
+    <string name="userulestext"> <u>Условия использования</u></string>
+    <string name="confidpolicytext"><u>Политика конфиденциальности</u></string>
+    <string name="enterphonenumhint">Номер телефона</string>
+    <string name="resendsmscode">Повторная отправка кода подтверждения через</string>
+    <string name="wesendsmscode">На указанный номер телефона было отправлено СМС с кодом подтверждения</string>
+</resources>

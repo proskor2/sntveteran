@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/EnterPhonenumNavFr">
+
+    <fragment
+        android:id="@+id/EnterPhonenumNavFr"
+        android:name="store.dide.sntveteran.ui.view.EnterPhoneNumberFragment"
+        android:label="Ввод номера телефона"
+        tools:layout="@layout/fragment_enterphonenum">
+
+        <action
+            android:id="@+id/action_phonenum_tosms"
+            app:destination="@id/nterCodeNavFr" />
+    </fragment>
+    <fragment
+        android:id="@+id/nterCodeNavFr"
+        android:name="store.dide.sntveteran.ui.view.EnterSmsCodeFragment"
+        android:label="Ввод кода"
+        tools:layout="@layout/fragment_entersmscode">
+
+        <action
+            android:id="@+id/action_smscode_tophonenum"
+            app:destination="@id/EnterPhonenumNavFr" />
+    </fragment>
+</navigation>
