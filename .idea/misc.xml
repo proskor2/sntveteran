@@ -4,14 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/activity_authorization.xml" value="0.22580645161290322" />
-        <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/activity_main.xml" value="0.32155797101449274" />
-        <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/content_authorization.xml" value="0.32155797101449274" />
+        <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/content_authorization.xml" value="0.1" />
         <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/content_main.xml" value="0.32155797101449274" />
         <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/fragment_enterphonenum.xml" value="0.33" />
         <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/fragment_entersmscode.xml" value="0.33" />
         <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/fragment_first.xml" value="0.32155797101449274" />
+        <entry key="..\:/Android projects/sntveteran/app/src/main/res/layout/fragment_services.xml" value="0.18085106382978725" />
         <entry key="..\:/Android projects/sntveteran/app/src/main/res/menu/menu_main.xml" value="0.371875" />
         <entry key="..\:/Android projects/sntveteran/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.142" />
+        <entry key="..\:/Android projects/sntveteran/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1995" />
       </map>
     </option>
   </component>

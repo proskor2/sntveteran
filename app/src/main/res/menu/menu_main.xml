@@ -3,8 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="store.dide.sntveteran.AuthorizationActivity">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="Settings"
-        app:showAsAction="never" />
+        android:id="@+id/nav_main"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Главная" />
+    <item
+        android:id="@+id/nav_services"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="Сервисы" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_baseline_miscellaneous_services_24"
+        android:title="Настройки" />
 </menu>
