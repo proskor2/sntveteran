@@ -7,4 +7,21 @@
     <string name="enterphonenumhint">Номер телефона</string>
     <string name="resendsmscode">Повторная отправка кода подтверждения через</string>
     <string name="wesendsmscode">На указанный номер телефона было отправлено СМС с кодом подтверждения</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="titlemain">Главная</string>
+    <string name="titleservices">Сервисы</string>
+    <string name="titlesettings">Настройки</string>
+    <string name="switchpush">Уведомления</string>
+    <string name="getpushnotif">Получать push уведомления</string>
+    <string name="getpushnotif2">Получать Push-уведомления</string>
+    <string name="exit">Выход</string>
+    <string name="docs">Документы</string>
+    <string name="carddocsdesr">Перечень нормативных документов регламентирующих работу СНТ, отчеты и протоколы собраний</string>
+    <string name="appeals">Предложения и обращения</string>
+    <string name="cardappealsdescr">Напишите официальное сообщение правлению с вашими идеями и предложениями</string>
+    <string name="questionnaires">Опросы и голосования</string>
+    <string name="cardquestionnairesdescr">Участвуйте в принятии решений вашего СНТ путем гоолосования</string>
+    <string name="ownres">Собственники и участки</string>
+    <string name="cardownersdesr">Информация по членам СНТ</string>
 </resources>

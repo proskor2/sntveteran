@@ -6,10 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import store.dide.sntveteran.MainActivity
-import store.dide.sntveteran.R
 import store.dide.sntveteran.databinding.FragmentEntersmscodeBinding
+import store.dide.sntveteran.ui.MainActivity
 
 
 class EnterSmsCodeFragment : Fragment() {

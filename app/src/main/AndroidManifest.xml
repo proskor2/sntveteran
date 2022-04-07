@@ -12,11 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sntveteran">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:label="@string/title_activity_main" />
         <activity
-            android:name=".AuthorizationActivity"
+            android:name=".ui.AuthorizationActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
