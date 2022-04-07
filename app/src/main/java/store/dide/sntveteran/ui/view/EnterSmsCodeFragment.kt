@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import store.dide.sntveteran.R
 import store.dide.sntveteran.databinding.FragmentEntersmscodeBinding
 import store.dide.sntveteran.ui.MainActivity
 
@@ -28,10 +30,14 @@ class EnterSmsCodeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonEntersms.setOnClickListener {
-//            findNavController().navigate(R.id.action_smscode_tophonenum)
-            startActivity(Intent(this.context, MainActivity::class.java))
-            activity?.finish()
+           findNavController().navigate(R.id.action_nterCodeNavFr_to_requestAccessFragment2)
         }
+
+        binding.buttonBacktoenterphone.setOnClickListener(){
+            findNavController().navigate(R.id.action_nterCodeNavFr_to_EnterPhonenumNavFr)
+        }
+
+
     }
 
     override fun onDestroyView() {

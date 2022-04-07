@@ -32,7 +32,7 @@ class EnterPhoneNumberFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonToSms.setOnClickListener {
-            findNavController().navigate(R.id.action_phonenum_tosms)
+            findNavController().navigate(R.id.action_EnterPhonenumNavFr_to_nterCodeNavFr)
         }
     }
 

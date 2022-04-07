@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/green</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/green</item>
+        <item name="colorSecondary">@color/yellow</item>
         <item name="colorSecondaryVariant">@color/yellow</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -20,7 +20,7 @@
     </style>
 
 
-
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/yellow</color>
     <style name="Theme.Sntveteran.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Sntveteran.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

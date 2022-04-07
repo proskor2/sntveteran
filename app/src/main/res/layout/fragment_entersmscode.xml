@@ -8,6 +8,58 @@
     tools:context=".ui.view.EnterSmsCodeFragment">
 
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/text_authLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotext" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/greenlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/text_confpolicy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/confidpolicytext"
+        android:textColor="#B2FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_userules2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/userulestext"
+        android:textColor="#B4FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/text_confpolicy2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_authLogin"
         android:layout_width="match_parent"
@@ -15,10 +67,12 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:textColorHint="@color/yellow"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:hintTextColor="@color/mtrl_textinput_default_box_stroke_color"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:startIconTint="@color/mtrl_textinput_default_box_stroke_color">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -28,7 +82,7 @@
             android:maxLines="1"
             android:textColor="@color/yellow"
             android:textColorHint="@color/yellow"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,6 +100,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+
+    <ImageButton
+        android:id="@+id/button_backtoenterphone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:backgroundTint="@color/mtrl_textinput_default_box_stroke_color"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -69,9 +136,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
         android:text="@string/wesendsmscode"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -79,7 +144,7 @@
         app:layout_constraintBottom_toTopOf="@+id/text_authLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -87,4 +152,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

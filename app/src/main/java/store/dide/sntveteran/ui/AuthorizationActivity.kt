@@ -1,5 +1,6 @@
 package store.dide.sntveteran.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -14,6 +15,11 @@ class AuthorizationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val activation = "ok"
+        if (activation == "ok"){
+            startActivity(Intent(this, MainActivity::class.java))
+        }
 
         binding = ActivityAuthorizationBinding.inflate(layoutInflater)
         setContentView(binding.root)

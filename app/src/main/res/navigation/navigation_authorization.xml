@@ -10,19 +10,42 @@
         android:name="store.dide.sntveteran.ui.view.EnterPhoneNumberFragment"
         android:label="Ввод номера телефона"
         tools:layout="@layout/fragment_enterphonenum">
-
         <action
-            android:id="@+id/action_phonenum_tosms"
-            app:destination="@id/nterCodeNavFr" />
+            android:id="@+id/action_EnterPhonenumNavFr_to_nterCodeNavFr"
+            app:destination="@id/nterCodeNavFr"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/nterCodeNavFr"
         android:name="store.dide.sntveteran.ui.view.EnterSmsCodeFragment"
         android:label="Ввод кода"
         tools:layout="@layout/fragment_entersmscode">
-
         <action
-            android:id="@+id/action_smscode_tophonenum"
-            app:destination="@id/EnterPhonenumNavFr" />
+            android:id="@+id/action_nterCodeNavFr_to_EnterPhonenumNavFr"
+            app:destination="@id/EnterPhonenumNavFr"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_nterCodeNavFr_to_requestAccessFragment2"
+            app:destination="@id/requestAccessFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
+    <fragment
+        android:id="@+id/requestAccessFragment"
+        android:name="store.dide.sntveteran.ui.view.RequestAccessFragment"
+        android:label="Запрос на доступ"
+        tools:layout="@layout/fragment_request_access" >
+        <action
+            android:id="@+id/action_requestAccessFragment_to_requsetAwaitFragment"
+            app:destination="@id/requsetAwaitFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/requsetAwaitFragment"
+        android:name="store.dide.sntveteran.ui.view.RequsetAwaitFragment"
+        android:label="fragment_requset_await"
+        tools:layout="@layout/fragment_requset_await" />
 </navigation>
