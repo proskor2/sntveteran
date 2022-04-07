@@ -15,11 +15,44 @@
         android:id="@+id/navigation_services"
         android:name="store.dide.sntveteran.ui.view.ServicesFragment"
         android:label="@string/titleservices"
-        tools:layout="@layout/fragment_services" />
+        tools:layout="@layout/fragment_services" >
+        <action
+            android:id="@+id/action_navigation_services_to_docsFragment"
+            app:destination="@id/docsFragment" />
+        <action
+            android:id="@+id/action_navigation_services_to_appealsFragment"
+            app:destination="@id/appealsFragment" />
+        <action
+            android:id="@+id/action_navigation_services_to_votesFragment"
+            app:destination="@id/votesFragment" />
+        <action
+            android:id="@+id/action_navigation_services_to_ownersFragment"
+            app:destination="@id/ownersFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_settings"
         android:name="store.dide.sntveteran.ui.view.SettingsFragment"
         android:label="@string/titlesettings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/appealsFragment"
+        android:name="store.dide.sntveteran.ui.view.AppealsFragment"
+        android:label="appeals_fragment"
+        tools:layout="@layout/appeals_fragment" />
+    <fragment
+        android:id="@+id/docsFragment"
+        android:name="store.dide.sntveteran.ui.view.DocsFragment"
+        android:label="docs_fragment"
+        tools:layout="@layout/docs_fragment" />
+    <fragment
+        android:id="@+id/votesFragment"
+        android:name="store.dide.sntveteran.ui.view.VotesFragment"
+        android:label="votes_fragment"
+        tools:layout="@layout/votes_fragment" />
+    <fragment
+        android:id="@+id/ownersFragment"
+        android:name="store.dide.sntveteran.ui.view.OwnersFragment"
+        android:label="owners_fragment"
+        tools:layout="@layout/owners_fragment" />
 </navigation>

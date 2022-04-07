@@ -16,10 +16,10 @@ class AuthorizationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val activation = "ok"
-        if (activation == "ok"){
-            startActivity(Intent(this, MainActivity::class.java))
-        }
+//        val activation = "ok"
+//        if (activation == "ok"){
+//            startActivity(Intent(this, MainActivity::class.java))
+//        }
 
         binding = ActivityAuthorizationBinding.inflate(layoutInflater)
         setContentView(binding.root)

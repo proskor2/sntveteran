@@ -36,6 +36,8 @@ class RequestAccessFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(RequestAccessViewModel::class.java)
 
+        activity?.actionBar?.title = "123"
+
         binding.buttonSend.setOnClickListener() {
             findNavController().navigate(R.id.action_requestAccessFragment_to_requsetAwaitFragment)
         }

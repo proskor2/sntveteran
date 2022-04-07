@@ -1,5 +1,6 @@
 package store.dide.sntveteran.ui.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import store.dide.sntveteran.R
 import store.dide.sntveteran.databinding.FragmentEnterphonenumBinding
+import store.dide.sntveteran.ui.MainActivity
 
 
 class EnterPhoneNumberFragment : Fragment() {
@@ -33,6 +35,11 @@ class EnterPhoneNumberFragment : Fragment() {
 
         binding.buttonToSms.setOnClickListener {
             findNavController().navigate(R.id.action_EnterPhonenumNavFr_to_nterCodeNavFr)
+        }
+
+        binding.textConfpolicy.setOnClickListener(){
+            startActivity(Intent(activity, MainActivity::class.java))
+            activity?.finish()
         }
     }
 
